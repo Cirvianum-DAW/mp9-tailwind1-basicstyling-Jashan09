@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Showcase</title>
+    <link rel="stylesheet" href="../dist/styles.css"> <!-- affegit per mi-->
   </head>
   <body>
     <div class="container mx-auto py-8">
-      <h1>Tailwind Showcase</h1>
-      <div>
-        <h2>Colors and Backgrounds</h2>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+      <h1 class="text-4xl font-bold py-4">Tailwind Showcase</h1>
+      <div class="bg-slate-200">
+        <h2 class=" text-2xl font-bold p-4">Colors and Backgrounds</h2>
+        <div class="flex p-4">
+          <div class="border-solid border-2 border-gray-600 flex-1 p-4"></div>
+          <div class="border-solid border-2 border-blue-600 flex-1 p-4"></div>
+          <div class="border-solid border-2 border-red-600 flex-1 p-4"></div>
+          <div class="border-solid border-2 border-purple-600 flex-1 p-4"></div>
         </div>
       </div>
       <div>
@@ -25,23 +26,26 @@
           <div></div>
         </div>
       </div>
-      <div>
-        <h2>Text</h2>
-        <p>This is a small text.</p>
-        <p>This is a base text.</p>
-        <p>This is a large text.</p>
-        <p>This is an extra large text.</p>
-        <p>This is a 3x extra large text.</p>
-        <p>This is a 4x extra large text.</p>
-        <p>This is a 5x extra large text.</p>
-        <p>This is a 8x extra large text.</p>
-        <p>This is a 9x extra large text.</p>
+      <br> <!-- afegit per mi-->
+      <div class="bg-slate-200 text-gray-600 p-4">
+
+        <h2 class="text-2xl font-bold " >Text</h2>
+        <p class="text-xs">This is a small text.</p>
+        <p class="text-base">This is a base text.</p>
+        <p class="text-lg">This is a large text.</p>
+        <p class="text-xl">This is an extra large text.</p>
+        <p class="text-3xl">This is a 3x extra large text.</p>
+        <p class="text-4xl">This is a 4x extra large text.</p>
+        <p class="text-5xl">This is a 5x extra large text.</p>
+        <p class="text-8xl">This is a 8x extra large text.</p>
+        <p class="text-9xl">This is a 9x extra large text.</p>
+
       </div>
       <div>
         <h2>Text Decoration</h2>
-        <p>This is an underlined text.</p>
-        <p>This is a line-through text.</p>
-        <p>This is an underlined and line-through text.</p>
+        <p class="underline">This is an underlined text.</p>
+        <p class="line-through	">This is a line-through text.</p>
+        <p>No es pot fer un underline + un line-through.</p>
       </div>
       <div>
         <h2>Text Alignment</h2>
