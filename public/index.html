@@ -4,32 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Showcase</title>
-    <link rel="stylesheet" href="../dist/styles.css"> <!-- affegit per mi-->
+    <link rel="stylesheet" href="../dist/styles.css" />
+    <!-- affegit per mi-->
   </head>
   <body>
     <div class="container mx-auto py-8">
       <h1 class="text-4xl font-bold py-4">Tailwind Showcase</h1>
-      <div class="bg-slate-200">
-        <h2 class=" text-2xl font-bold p-4">Colors and Backgrounds</h2>
+      <div class="bg-slate-100">
+        <h2 class="text-2xl font-bold p-4">Colors and Backgrounds</h2>
         <div class="flex p-4">
-          <div class="border-solid border-2 border-gray-600 flex-1 p-4"></div>
-          <div class="border-solid border-2 border-blue-600 flex-1 p-4"></div>
-          <div class="border-solid border-2 border-red-600 flex-1 p-4"></div>
-          <div class="border-solid border-2 border-purple-600 flex-1 p-4"></div>
+          <div
+            class="border-solid border-2 border-gray-300 flex-1 p-4 h-28"
+          ></div>
+          <div
+            class="border-solid border-2 bg-red-100 border-red-300 flex-1 p-4"
+          ></div>
+          <div
+            class="border-solid border-2 border-yellow-300 bg-yellow-100 flex-1 p-4"
+          ></div>
+          <div
+            class="border-solid border-2 border-green-300 bg-green-100 flex-1 p-4"
+          ></div>
         </div>
       </div>
-      <div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+      <div class="bg-slate-100 mt-6">
+        <div class="flex p-4">
+          <div
+            class="border-solid border-2 border-gray-400 flex-1 p-4 h-28"
+          ></div>
+          <div
+            class="border-solid border-2 border-gray-400 bg-gray-200/75 flex-1 p-4"
+          ></div>
+          <div
+            class="border-solid border-2 border-gray-400 bg-gray-300 flex-1 p-4"
+          ></div>
+          <div
+            class="border-solid border-2 border-gray-400 bg-gray-400 flex-1 p-4"
+          ></div>
         </div>
       </div>
-      <br> <!-- afegit per mi-->
-      <div class="bg-slate-200 text-gray-600 p-4">
-
-        <h2 class="text-2xl font-bold text-black" >Text</h2>
+      <br />
+      <!-- afegit per mi-->
+      <div class="bg-slate-100 text-gray-600 p-4">
+        <h2 class="text-2xl font-bold text-black">Text</h2>
         <p class="text-xs">This is a small text.</p>
         <p class="text-base">This is a base text.</p>
         <p class="text-lg">This is a large text.</p>
@@ -39,84 +56,167 @@
         <p class="text-5xl">This is a 5x extra large text.</p>
         <p class="text-8xl">This is a 8x extra large text.</p>
         <p class="text-9xl">This is a 9x extra large text.</p>
-
       </div>
 
-      <br>
+      <br />
 
-      <div class="bg-slate-200 p-4 text-gray-600">
+      <div class="bg-slate-100 p-4 text-gray-600">
         <h2 class="font-bold text-2xl py-2 text-black">Text Decoration</h2>
         <p class="underline">This is an underlined text.</p>
-        <p class="line-through	">This is a line-through text.</p>
+        <p class="line-through">This is a line-through text.</p>
         <p>No es pot fer un underline + un line-through.</p>
       </div>
-      <div class="bg-slate-200 p-4 text-gray-600 ">
+      <div class="bg-slate-100 p-4 text-gray-600">
         <h2 class="font-bold text-2xl py-2 text-black">Text Alignment</h2>
-        <p>This is a left-aligned text.</p>
-        <p>This is a center-aligned text.</p>
-        <p>This is a right-aligned text.</p>
+
+        <p class="text-left">This is a left-aligned text.</p>
+        <p class="text-center">This is a center-aligned text.</p>
+        <p class="text-right">This is a right-aligned text.</p>
       </div>
-      <div>
-        <h2>Sizes</h2>
-        <div>
-          <div>XS</div>
-          <div>SM</div>
-          <div>BASE</div>
-          <div>LG</div>
+      <div class="bg-slate-100 p-4">
+        <h2 class="font-bold text-2xl py-2">Sizes</h2>
+        <div class="flex p-4 text-center">
+          <div
+            class="border-solid border-2 border-slate-200 bg-slate-100 flex-1 p-4 h-28"
+          >
+            XS
+          </div>
+          <div
+            class="border-solid border-2 border-slate-400 bg-slate-200 flex-1 p-4"
+          >
+            SM
+          </div>
+          <div
+            class="border-solid border-2 border-slate-600 bg-slate-400 flex-1 p-4"
+          >
+            BASE
+          </div>
+          <div
+            class="border-solid border-2 border-slate-800 bg-slate-600 flex-1 p-4"
+          >
+            LG
+          </div>
         </div>
       </div>
-      <div>
-        <h2>Borders</h2>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+      <div class="bg-slate-100 mt-6">
+        <h2 class="font-bold text-2xl py-2 text-black">Borders</h2>
+        <div class="flex p-4">
+          <div
+            class="border-solid border-2 border-gray-400 flex-1 p-4 h-28"
+          ></div>
+          <div
+            class="border-solid border-2 border-gray-400 bg-gray-200/75 flex-1 p-4 rounded-md"
+          ></div>
+          <div
+            class="border-solid border-2 border-gray-400 bg-gray-300 flex-1 p-4 rounded-lg"
+          ></div>
+          <div
+            class="border-solid border-2 border-gray-400 bg-gray-400 flex-1 p-4 rounded-full"
+          ></div>
         </div>
       </div>
-      <div>
-        <div>
-          <h2>Margin</h2>
-          <div></div>
-          <div></div>
-          <div></div>
+
+      <div class="mt-2 bg-slate-100">
+        <div class="p-4">
+          <h2 class="text-black text-2xl font-bold">Margin</h2>
+          <div class="bg-slate-200 border-solid border-2 border-gray-400 m-6">
+            This div has a margin of 1.5rem/24px (m-6) on all sides.
+          </div>
+          <div
+            class="bg-slate-300 border-solid border-2 border-gray-400 mx-6 my-12"
+          >
+            This div has a horizontal margin of 1.5rem and vertical margin of
+            3rem.
+          </div>
+          <div
+            class="bg-slate-400 border-solid border-2 border-gray-400 mt-4 mr-8 mb-12 ml-16"
+          >
+            This div has a margin of 1rem on the top, 2rem on the right, 3rem on
+            the bottom, and 4rem on the left.
+          </div>
         </div>
-        <div>
-          <h2>Padding</h2>
-          <div></div>
-          <div></div>
-          <div></div>
+
+        <div class="mt-2 bg-slate-100 p-4">
+          <h2 class="text-black text-2xl font-bold mb-2">Padding</h2>
+          <div class="bg-slate-200 border-solid border-2 border-gray-400 p-6">
+            This div has a padding of 1.5rem on all sides.
+          </div>
+          <div
+            class="bg-slate-300 border-solid border-2 border-gray-400 px-6 py-12"
+          >
+            This div has a horizontal padding of 1.5rem and a vertical padding
+            of 3rem.
+          </div>
+          <div
+            class="bg-slate-400 border-solid border-2 border-gray-400 pt-4 pr-8 pb-12 pl-16"
+          >
+            This div has a padding of 1rem on the top, 2rem on the right, 3rem
+            on the bottom, and 4rem on the left.
+          </div>
         </div>
-        <div>
-          <h2>Card 1</h2>
-          <div>
+
+        <div class="mt-2 bg-slate-100 p-4">
+          <h2 class="text-black text-2xl font-bold mb-2">Card 1</h2>
+          <div class="border-solid border-2 border-gray-400 rounded-lg p-4">
             <img
               src="https://via.placeholder.com/300x200"
               alt="Placeholder image"
+              class="rounded-lg mb-4"
             />
-            <h3>Card Title</h3>
+            <h3 class="text-black text-2xl font-bold my-2">Card Title</h3>
             <p>This is a basic card example with an image and no flex.</p>
-            <a href="#">Button</a>
+            <div id="afegitPerMi" class="mt-4">
+              <a
+                href="#"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >Button</a
+              >
+            </div>
           </div>
         </div>
-        <div>
-          <h2>Card 2</h2>
-          <div>
-            <h3>Card Title</h3>
-            <p>This is a basic card example with no image and no flex.</p>
-            <ul>
+
+        <div class="mt-2 bg-slate-100 p-4">
+          <h2 class="text-black text-2xl font-bold mb-2">Card 2</h2>
+          <div class="border-solid border-2 border-gray-400 rounded-lg p-4">
+            <h3 class="text-black text-2xl font-bold my-2">Card Title</h3>
+            <p class="mb-4">
+              This is a basic card example with no image and no flex.
+            </p>
+            <ul class="list-disc px-4">
               <li>Item 1</li>
               <li>Item 2</li>
               <li>Item 3</li>
             </ul>
-            <a href="#">Button</a>
+            <div id="afegitPerMi" class="mt-4">
+              <a
+                href="#"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >Button</a
+              >
+            </div>
           </div>
         </div>
-        <div>
-          <h2>Buttons</h2>
-          <button>Button 1</button>
-          <button>Button 2</button>
-          <button>Button 3</button>
+
+        <div class="mt-2 bg-slate-100 p-4">
+          <h2 class="text-black text-2xl font-bold">Buttons</h2>
+          <div class="flex p-4">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Button
+            </button>
+
+            <button
+              class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mx-1"
+            >
+              Button 2
+            </button>
+            <button
+              class="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg"
+            >
+              Button 2
+            </button>
+          </div>
         </div>
       </div>
     </div>
