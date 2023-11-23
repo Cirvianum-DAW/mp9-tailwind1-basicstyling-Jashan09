@@ -704,12 +704,24 @@ video {
   height: 7rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
 
 .list-disc {
   list-style-type: disc;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .rounded-full {
@@ -1118,6 +1130,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
